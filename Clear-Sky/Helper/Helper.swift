@@ -8,11 +8,11 @@
 
 import Foundation
 class Helper {
-    static var apiKey: String {
+    static var apiKey: String? {
         guard let filepath = Bundle.main.path(forResource: "ApiKey", ofType: "plist"),
             let plist = NSDictionary(contentsOfFile: filepath),
-            let value = plist.object(forKey: "API_KEY") else { print("Unable to locate file1"); return }
-        return value as! String
+            let value = plist.object(forKey: "API_KEY") else { print("Unable to locate file1"); return nil}
+        return value as? String
     }
 }
 

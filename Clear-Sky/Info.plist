@@ -32,6 +32,10 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationUsageDescription</key>
+	<string>Clear-Sky will use your current location to provide accurate weather updates</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow Clear-Sky to access your current location to provide weaher updates</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

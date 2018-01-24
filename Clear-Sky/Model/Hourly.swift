@@ -1,15 +1,33 @@
 //
-//  Currently.swift
+//  Hourly.swift
 //  Clear-Sky
 //
-//  Created by Tanveer Bashir on //.
-//  Copyright ©  Tanveer Bashir. All rights reserved.
+//  Created by Tanveer Bashir on 1/23/18.
+//  Copyright © 2018 Tanveer Bashir. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-class Currently: Weather {
+class Hourly: Weather {
+    var summary: String!
+    var icon: String!
+    var data: [HourlyData]!
+
+    required init?(map: Map) {
+        super.init(map: map)
+    }
+
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        
+        summary                 <- map["summary"]
+        icon                    <- map["icon"]
+        data                    <- map["data"]
+    }
+}
+
+class HourlyData: Mappable {
     var time: Int!
     var summary: String!
     var icon: String!
@@ -30,12 +48,9 @@ class Currently: Weather {
     var visibility: Int!
     var ozone: Double!
 
-    required init?(map: Map) {
-        super.init(map: map)
-    }
+    required init?(map: Map) {  }
 
-    override func mapping(map: Map) {
-        super.mapping(map: map)
+    func mapping(map: Map) {
 
         time                    <- map["time"]
         summary                 <- map["summary"]
@@ -58,4 +73,3 @@ class Currently: Weather {
         ozone                   <- map["ozone"]
     }
 }
-

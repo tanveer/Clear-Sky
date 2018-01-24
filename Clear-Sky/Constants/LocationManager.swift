@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import CoreLocation
 
-class LocationManager: UIViewController{
-
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+class LocationManager  {
+    static var manager: CLLocationManager {
+        let locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        return locationManager
     }
-
-    
 }
+
