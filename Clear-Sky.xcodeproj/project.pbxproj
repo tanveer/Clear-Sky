@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D00BEC141004A44AC80C7F /* Pods_Clear_Sky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEB037E194A003455D9C6C6 /* Pods_Clear_Sky.framework */; };
 		E20EE9082017F67E0024A09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE9072017F67E0024A09F /* AppDelegate.swift */; };
 		E20EE90A2017F67E0024A09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE9092017F67E0024A09F /* ViewController.swift */; };
 		E20EE90D2017F67E0024A09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20EE90B2017F67E0024A09F /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FEB037E194A003455D9C6C6 /* Pods_Clear_Sky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clear_Sky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A37E41E7E1AAEA6CBDD612FE /* Pods-Clear-Sky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clear-Sky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clear-Sky/Pods-Clear-Sky.release.xcconfig"; sourceTree = "<group>"; };
 		E20EE9042017F67E0024A09F /* Clear-Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clear-Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20EE9072017F67E0024A09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20EE9092017F67E0024A09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		E242EADC201816E90049B9F5 /* Currently.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		E2A47A2E20181BEB00BB2624 /* ApiKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKey.plist; sourceTree = "<group>"; };
 		E2A47A3020181C3400BB2624 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		FE89545297BD7058CEA87956 /* Pods-Clear-Sky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clear-Sky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clear-Sky/Pods-Clear-Sky.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D00BEC141004A44AC80C7F /* Pods_Clear_Sky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA7EA8BB2D5773218C777C6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE89545297BD7058CEA87956 /* Pods-Clear-Sky.debug.xcconfig */,
+				A37E41E7E1AAEA6CBDD612FE /* Pods-Clear-Sky.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB73EB0D66951F57F36902B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FEB037E194A003455D9C6C6 /* Pods_Clear_Sky.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E20EE8FB2017F67E0024A09F = {
 			isa = PBXGroup;
 			children = (
 				E2A47A2E20181BEB00BB2624 /* ApiKey.plist */,
 				E20EE9062017F67E0024A09F /* Clear-Sky */,
 				E20EE9052017F67E0024A09F /* Products */,
+				CA7EA8BB2D5773218C777C6E /* Pods */,
+				DB73EB0D66951F57F36902B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E20EE9162017F67E0024A09F /* Build configuration list for PBXNativeTarget "Clear-Sky" */;
 			buildPhases = (
+				08C8B0A6BF47C958D13746D2 /* [CP] Check Pods Manifest.lock */,
 				E20EE9002017F67E0024A09F /* Sources */,
 				E20EE9012017F67E0024A09F /* Frameworks */,
 				E20EE9022017F67E0024A09F /* Resources */,
+				B22BCDDC2CAE1B6433F830D4 /* [CP] Embed Pods Frameworks */,
+				8A24562A9ED0BD5B0FF4E160 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +229,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08C8B0A6BF47C958D13746D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A24562A9ED0BD5B0FF4E160 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clear-Sky/Pods-Clear-Sky-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22BCDDC2CAE1B6433F830D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clear-Sky/Pods-Clear-Sky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E20EE9002017F67E0024A09F /* Sources */ = {
@@ -348,6 +423,7 @@
 		};
 		E20EE9172017F67E0024A09F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE89545297BD7058CEA87956 /* Pods-Clear-Sky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -363,6 +439,7 @@
 		};
 		E20EE9182017F67E0024A09F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37E41E7E1AAEA6CBDD612FE /* Pods-Clear-Sky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
