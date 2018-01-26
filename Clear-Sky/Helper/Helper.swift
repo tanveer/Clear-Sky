@@ -15,4 +15,3 @@ class Helper {
         return value as? String
     }
 }
-

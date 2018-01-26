@@ -19,4 +19,3 @@ class SectionHeader: UIView {
         }
     }
 }
-

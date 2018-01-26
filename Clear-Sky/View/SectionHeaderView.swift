@@ -30,7 +30,7 @@ extension SectionHeaderView: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SectionHeaderCollectionCell.id, for: indexPath) as! SectionHeaderCollectionCell
-        cell.configure(data: (hourlyData?[indexPath.row])!)
+        cell.configure(data: (hourlyData?[indexPath.row])!, indexPath: indexPath)
         return cell
     }
 }

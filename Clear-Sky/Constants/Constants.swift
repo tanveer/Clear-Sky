@@ -8,7 +8,18 @@
 
 import Foundation
 
-struct Constants {
-    static let apikey = "<your api key>" //get it from here -> https://darksky.net/dev
-    static let baseUrl = "https://api.darksky.net/forecast/"
+let baseUrl = "https://api.darksky.net/forecast/"
+
+var apiKey = "<your apiKey heer>" // get one from https://darksky.net/dev
+
+var now: Date {
+    return Date()
+}
+
+var dateFormatter: DateFormatter {
+    return DateFormatter()
+}
+
+var isSimulator: Bool {
+    return TARGET_OS_SIMULATOR != 0
 }

@@ -9,16 +9,25 @@
 /* Begin PBXBuildFile section */
 		52D00BEC141004A44AC80C7F /* Pods_Clear_Sky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEB037E194A003455D9C6C6 /* Pods_Clear_Sky.framework */; };
 		E20EE9082017F67E0024A09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE9072017F67E0024A09F /* AppDelegate.swift */; };
-		E20EE90A2017F67E0024A09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE9092017F67E0024A09F /* ViewController.swift */; };
+		E20EE90A2017F67E0024A09F /* DarkSkyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE9092017F67E0024A09F /* DarkSkyViewController.swift */; };
 		E20EE90D2017F67E0024A09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20EE90B2017F67E0024A09F /* Main.storyboard */; };
 		E20EE90F2017F67E0024A09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20EE90E2017F67E0024A09F /* Assets.xcassets */; };
 		E20EE9122017F67E0024A09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20EE9102017F67E0024A09F /* LaunchScreen.storyboard */; };
 		E20EE91B2017F7720024A09F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE91A2017F7720024A09F /* Constants.swift */; };
 		E20EE91D2017FCB00024A09F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20EE91C2017FCB00024A09F /* LocationManager.swift */; };
+		E21370AE201AD37F00930292 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21370AD201AD37F00930292 /* FooterView.xib */; };
+		E21370B0201AD39000930292 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21370AF201AD39000930292 /* FooterView.swift */; };
+		E21370B2201AD59D00930292 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21370B1201AD59D00930292 /* SectionFooterView.swift */; };
+		E21370B5201AEA8600930292 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21370B3201AEA8600930292 /* DailyCell.swift */; };
+		E21370B6201AEA8600930292 /* DailyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21370B4201AEA8600930292 /* DailyCell.xib */; };
+		E240A854201C2F210080338A /* night-sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E240A852201C2F210080338A /* night-sky.jpg */; };
+		E240A858201CE3510080338A /* DarkSkyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240A857201CE3510080338A /* DarkSkyError.swift */; };
+		E240A85A201D0DB80080338A /* JsonDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240A859201D0DB80080338A /* JsonDownloader.swift */; };
+		E240A85C201D0DEC0080338A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E240A85B201D0DEC0080338A /* Coordinate.swift */; };
 		E242EADD201816E90049B9F5 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242EADC201816E90049B9F5 /* Currently.swift */; };
 		E2A47A2F20181BEB00BB2624 /* ApiKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2A47A2E20181BEB00BB2624 /* ApiKey.plist */; };
 		E2A47A3120181C3400BB2624 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A3020181C3400BB2624 /* Helper.swift */; };
-		E2A47A3420182A9500BB2624 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A3320182A9500BB2624 /* API.swift */; };
+		E2A47A3420182A9500BB2624 /* DarkSkyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A3320182A9500BB2624 /* DarkSkyAPIClient.swift */; };
 		E2A47A3620182BC600BB2624 /* String+Clear-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A3520182BC600BB2624 /* String+Clear-Sky.swift */; };
 		E2A47A3820182D2C00BB2624 /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A3720182D2C00BB2624 /* Hourly.swift */; };
 		E2A47A3A20182D8F00BB2624 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A3920182D8F00BB2624 /* Daily.swift */; };
@@ -28,6 +37,9 @@
 		E2A47A422018FFBA00BB2624 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A412018FFBA00BB2624 /* SectionHeaderView.swift */; };
 		E2A47A45201927F100BB2624 /* SectionHeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A43201927F100BB2624 /* SectionHeaderCollectionCell.swift */; };
 		E2A47A46201927F100BB2624 /* SectionHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2A47A44201927F100BB2624 /* SectionHeaderCollectionCell.xib */; };
+		E2A47A48201AA72900BB2624 /* Date+Clear-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A47201AA72900BB2624 /* Date+Clear-Sky.swift */; };
+		E2A47A4A201AAC0A00BB2624 /* Int+Clear-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A49201AAC0A00BB2624 /* Int+Clear-Sky.swift */; };
+		E2A47A4C201ABBE700BB2624 /* Double+Clear-Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A47A4B201ABBE700BB2624 /* Double+Clear-Sky.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,17 +47,26 @@
 		A37E41E7E1AAEA6CBDD612FE /* Pods-Clear-Sky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clear-Sky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clear-Sky/Pods-Clear-Sky.release.xcconfig"; sourceTree = "<group>"; };
 		E20EE9042017F67E0024A09F /* Clear-Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clear-Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20EE9072017F67E0024A09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E20EE9092017F67E0024A09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E20EE9092017F67E0024A09F /* DarkSkyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyViewController.swift; sourceTree = "<group>"; };
 		E20EE90C2017F67E0024A09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E20EE90E2017F67E0024A09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20EE9112017F67E0024A09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20EE9132017F67E0024A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20EE91A2017F7720024A09F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E20EE91C2017FCB00024A09F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E21370AD201AD37F00930292 /* FooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		E21370AF201AD39000930292 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		E21370B1201AD59D00930292 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
+		E21370B3201AEA8600930292 /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		E21370B4201AEA8600930292 /* DailyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyCell.xib; sourceTree = "<group>"; };
+		E240A852201C2F210080338A /* night-sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "night-sky.jpg"; sourceTree = "<group>"; };
+		E240A857201CE3510080338A /* DarkSkyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyError.swift; sourceTree = "<group>"; };
+		E240A859201D0DB80080338A /* JsonDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDownloader.swift; sourceTree = "<group>"; };
+		E240A85B201D0DEC0080338A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		E242EADC201816E90049B9F5 /* Currently.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		E2A47A2E20181BEB00BB2624 /* ApiKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKey.plist; sourceTree = "<group>"; };
 		E2A47A3020181C3400BB2624 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		E2A47A3320182A9500BB2624 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E2A47A3320182A9500BB2624 /* DarkSkyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIClient.swift; sourceTree = "<group>"; };
 		E2A47A3520182BC600BB2624 /* String+Clear-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Clear-Sky.swift"; sourceTree = "<group>"; };
 		E2A47A3720182D2C00BB2624 /* Hourly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
 		E2A47A3920182D8F00BB2624 /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
@@ -55,6 +76,9 @@
 		E2A47A412018FFBA00BB2624 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		E2A47A43201927F100BB2624 /* SectionHeaderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionCell.swift; sourceTree = "<group>"; };
 		E2A47A44201927F100BB2624 /* SectionHeaderCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderCollectionCell.xib; sourceTree = "<group>"; };
+		E2A47A47201AA72900BB2624 /* Date+Clear-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Clear-Sky.swift"; sourceTree = "<group>"; };
+		E2A47A49201AAC0A00BB2624 /* Int+Clear-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Clear-Sky.swift"; sourceTree = "<group>"; };
+		E2A47A4B201ABBE700BB2624 /* Double+Clear-Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Clear-Sky.swift"; sourceTree = "<group>"; };
 		FE89545297BD7058CEA87956 /* Pods-Clear-Sky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clear-Sky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clear-Sky/Pods-Clear-Sky.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +135,7 @@
 			children = (
 				E20EE9072017F67E0024A09F /* AppDelegate.swift */,
 				E20EE90E2017F67E0024A09F /* Assets.xcassets */,
+				E240A852201C2F210080338A /* night-sky.jpg */,
 				E20EE9132017F67E0024A09F /* Info.plist */,
 				E242EADA201816B90049B9F5 /* Helper */,
 				E242EAD9201816B30049B9F5 /* Extensions */,
@@ -136,7 +161,7 @@
 		E242EAD52018165D0049B9F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E20EE9092017F67E0024A09F /* ViewController.swift */,
+				E20EE9092017F67E0024A09F /* DarkSkyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +174,11 @@
 				E2A47A412018FFBA00BB2624 /* SectionHeaderView.swift */,
 				E2A47A43201927F100BB2624 /* SectionHeaderCollectionCell.swift */,
 				E2A47A44201927F100BB2624 /* SectionHeaderCollectionCell.xib */,
+				E21370AD201AD37F00930292 /* FooterView.xib */,
+				E21370AF201AD39000930292 /* FooterView.swift */,
+				E21370B1201AD59D00930292 /* SectionFooterView.swift */,
+				E21370B3201AEA8600930292 /* DailyCell.swift */,
+				E21370B4201AEA8600930292 /* DailyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				E2A47A3520182BC600BB2624 /* String+Clear-Sky.swift */,
+				E2A47A47201AA72900BB2624 /* Date+Clear-Sky.swift */,
+				E2A47A49201AAC0A00BB2624 /* Int+Clear-Sky.swift */,
+				E2A47A4B201ABBE700BB2624 /* Double+Clear-Sky.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				E2A47A3020181C3400BB2624 /* Helper.swift */,
+				E240A857201CE3510080338A /* DarkSkyError.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -192,7 +226,9 @@
 		E2A47A3220182A6900BB2624 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				E2A47A3320182A9500BB2624 /* API.swift */,
+				E2A47A3320182A9500BB2624 /* DarkSkyAPIClient.swift */,
+				E240A859201D0DB80080338A /* JsonDownloader.swift */,
+				E240A85B201D0DEC0080338A /* Coordinate.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -259,6 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21370AE201AD37F00930292 /* FooterView.xib in Resources */,
+				E21370B6201AEA8600930292 /* DailyCell.xib in Resources */,
+				E240A854201C2F210080338A /* night-sky.jpg in Resources */,
 				E20EE9122017F67E0024A09F /* LaunchScreen.storyboard in Resources */,
 				E2A47A2F20181BEB00BB2624 /* ApiKey.plist in Resources */,
 				E2A47A402018FF8900BB2624 /* SectionHeaderView.xib in Resources */,
@@ -323,20 +362,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E240A85A201D0DB80080338A /* JsonDownloader.swift in Sources */,
+				E2A47A4C201ABBE700BB2624 /* Double+Clear-Sky.swift in Sources */,
+				E21370B5201AEA8600930292 /* DailyCell.swift in Sources */,
 				E2A47A3820182D2C00BB2624 /* Hourly.swift in Sources */,
+				E240A85C201D0DEC0080338A /* Coordinate.swift in Sources */,
 				E2A47A3A20182D8F00BB2624 /* Daily.swift in Sources */,
+				E21370B0201AD39000930292 /* FooterView.swift in Sources */,
+				E21370B2201AD59D00930292 /* SectionFooterView.swift in Sources */,
 				E2A47A422018FFBA00BB2624 /* SectionHeaderView.swift in Sources */,
 				E20EE91D2017FCB00024A09F /* LocationManager.swift in Sources */,
+				E240A858201CE3510080338A /* DarkSkyError.swift in Sources */,
+				E2A47A48201AA72900BB2624 /* Date+Clear-Sky.swift in Sources */,
 				E2A47A45201927F100BB2624 /* SectionHeaderCollectionCell.swift in Sources */,
 				E2A47A3C2018315400BB2624 /* Weather.swift in Sources */,
-				E20EE90A2017F67E0024A09F /* ViewController.swift in Sources */,
+				E20EE90A2017F67E0024A09F /* DarkSkyViewController.swift in Sources */,
 				E242EADD201816E90049B9F5 /* Currently.swift in Sources */,
 				E20EE9082017F67E0024A09F /* AppDelegate.swift in Sources */,
 				E20EE91B2017F7720024A09F /* Constants.swift in Sources */,
 				E2A47A3E2018FEB800BB2624 /* SectionHeader.swift in Sources */,
 				E2A47A3120181C3400BB2624 /* Helper.swift in Sources */,
 				E2A47A3620182BC600BB2624 /* String+Clear-Sky.swift in Sources */,
-				E2A47A3420182A9500BB2624 /* API.swift in Sources */,
+				E2A47A3420182A9500BB2624 /* DarkSkyAPIClient.swift in Sources */,
+				E2A47A4A201AAC0A00BB2624 /* Int+Clear-Sky.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

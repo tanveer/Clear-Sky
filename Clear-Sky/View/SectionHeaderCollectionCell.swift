@@ -8,13 +8,17 @@
 
 import UIKit
 
-class SectionHeaderCollectionCell: UICollectionViewCell {
-    @IBOutlet weak var tempLabel: UILabel!
-    @IBOutlet weak var minTempLabel: UILabel!
 
-    func configure(data: HourlyData) {
-        tempLabel.text = "\(data.temperature ?? 0)"
-        minTempLabel.text = "\(data.apparentTemperature ?? 0)"
+class SectionHeaderCollectionCell: UICollectionViewCell {
+    @IBOutlet private weak var tempLabel: UILabel!
+    @IBOutlet private weak var timeLabel: UILabel!
+    @IBOutlet private weak var iconImageView: UIImageView!
+
+    func configure(data: HourlyData, indexPath: IndexPath) {
+        tempLabel.text = data.temperature == nil ? "0" : "\(data.temperature.round)º"
+        iconImageView.image = UIImage(named: data.icon)
+        let time = now.dateFromUnixTime(data.time.unixTime).time
+        timeLabel.text = time.uppercased()
     }
 }
 

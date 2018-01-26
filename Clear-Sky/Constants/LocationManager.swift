@@ -10,9 +10,9 @@ import UIKit
 import CoreLocation
 
 class LocationManager  {
-    static var manager: CLLocationManager {
+    var manager: CLLocationManager {
         let locationManager = CLLocationManager()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         return locationManager
